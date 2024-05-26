@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="C:\New folder\New folder\Web design Assignment 2\index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+  <!-- <link rel="stylesheet" href=".js" /> -->
+  <link rel="stylesheet" href="jQuery.js" type="text/Javascript">
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">
+       <div class="logoImage">
+          <img src="Final images/logo_j.a-removebg-preview.png" alt="">
+       </div>
+       
+    </div>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+       <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="Skill.html">Skill</a></li>
+       <li><a href="gallery.html">Gallery</a></li>
+       <li><a href="Internship.html">Internship</a></li>
+
+       <li><a href="Education.html">Education</a></li>
+     
+       <li>
+          <div class="dropdown">
+             <a href="">About Us</a>
+             <div class="dropdown-content">
+                <a class="a1" href="carrer.html">Carrer</a>
+                <a class="aa" href="Awards.html">Awards</a>
+             </div>
+           </div>
+       </li>
+       <li><a href="contact.html">Contact</a></li>
+    </ul>
+ </nav>
+ <div class="heading2">
+Gallery
+</div>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="Final images/portrait-man-listening-music.jpg" alt="">
+          <h1>Listening Music
+          </h1>
+          <div class="details">
+            <h2>Listening Music
+            </h2>
+            <p>    Music holds a special place in my heart. It allows me to escape into different worlds, uplifts my mood, and provides a source of inspiration. I enjoy exploring various genres and artists, discovering new melodies, and creating playlists that reflect my different moods and emotions provides a source of inspiration.</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Final images/woman-chef-cooking-vegetables-pan.jpg" alt="2" />
+          <h1>Cooking</h1>
+          <div class="details">
+            <h2>Cooking</h2>
+            <p>Cooking is another passion of mine. I find joy in experimenting with ingredients, trying out new recipes, and creating delicious meals from scratch. The process of chopping, sautéing, and simmering brings a sense of satisfaction, and the opportunity to share my culinary creations with others is truly rewarding..</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Final images/book-library-with-open-textbook.jpg" alt="3" />
+          <h1>Reading Books</h1>
+          <div class="details">
+            <h2>Reading Books</h2>
+            <p>Reading books is a beloved pastime that transports me to different realms of imagination. Whether it's diving into the pages of a captivating novel, expanding my knowledge with non-fiction works, or exploring different perspectives through poetry, books have the power to educate, entertain, inspire me.
+            </p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="Final images/drawing.png" alt="4" />
+          <h1>Drawing
+          </h1>
+          <div class="details">
+            <h2>Drawing
+            </h2>
+            <p>In my free time, I find solace and self-expression through drawing. It allows me to immerse myself in the world of art, where I can unleash my creativity and translate my thoughts and emotions onto paper. Drawing becomes a therapeutic escape, where lines, colors come together personal and captivating.</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Final images/writting2.jpg" alt="5" />
+          <h1>Writting</h1>
+          <div class="details">
+            <h2>Writting</h2>
+            <p>Writing is my passion, a form of self-expression that ignites my imagination and empowers me to communicate with depth and clarity. Through words, I can shape narratives, explore new perspectives, and create meaningful connections. Writing is my voice, my art, and my constant companion, explore more.
+            </p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="Final images/vertical-shot-silhouette-man-front-camera.jpg" alt="6" />
+          <h1>Photography</h1>
+          <div class="details">
+            <h2>Photography</h2>
+            <p>Photography is my visual language, capturing moments frozen in time. With every click of the shutter, I paint stories, evoke emotions, and reveal unseen beauty. Through the lens, I find inspiration in the world around me, translating it into powerful images that speak volumes without words, reveal beauty</p>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+    <script src="jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+    <div class="copyright">
+        © Copyright 2024, All rights reserved
+    </div>
+</body>
+
+</html>
